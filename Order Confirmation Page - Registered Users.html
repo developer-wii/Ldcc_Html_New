@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Order Confirmation</title>
+	<link rel="shortcut icon" href="images/fav-icon.png" type="image/png" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	
+	jQuery(window).load(function() {
+		// Animate loader off screen
+		jQuery(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+</head>
+<script>
+	$(function() {  
+
+	jQuery.scrollSpeed(100, 800);
+
+	});
+</script>
+
+
+<body>
+<div class="se-pre-con"></div>
+	<div class="wrapper">
+		<header class="header">
+				<nav class="navbar navbar-default clearfix">
+					<div class="navbar-header">
+						<div class="logo clearfix"><a class="navbar-brand" href="http://112.196.54.36/LDCC/"><img src="images/logo.png"/></a></div>
+					</div>
+					<div class="header-right order_cnfrmtion_hrd">
+						<div class="new-account">
+							<span><a href="#">Add a new client account</a></span>
+							<span><a href="#">Add a new contracor account</a></span>
+						</div>
+						 <div class="dropdown user_profile">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Chris Kostas
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+							  <li><a href="#">HTML</a></li>
+							  <li><a href="#">CSS</a></li>
+							  <li><a href="#">JavaScript</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		</header>
+		<section class="order_cnfrmtion_user">
+			<div class="container">
+				 <div class="Confirm_delivery">
+					<h2>Confirm delivery address</h2>
+					<div class="content">
+						<div class="address_sec clearfix">
+							<span class="adrss"><a href="#"><img src="images/locator.png" />Colton house,London,N3 2DB</a></span>
+							<span class="new_adrss"><a href="#">Add new address</a></span>
+						</div>
+						<div class="delivery_note">
+							<label>Delivery note</label>
+							<span class="field"><textarea></textarea></span>
+							<span class="button">
+								<a href="http://112.196.54.36/LDCC/Thankyou.html"><input type="button" value="Submit"/></a>
+							</span>
+						</div>
+					</div>
+				 </div>
+			</div>
+		</section>
+
+		<footer class="footer_btm">
+			<div class="container">
+				<p>© 2018 LDCC, Inc. All Rights Reserved.</p>
+			</div>
+		</footer>
+		
+		<div class="social">
+			<ul class="list">
+				<li><a href="#"><img src="images/facebook.png" /></a></li>
+				<li><a href="#"><img src="images/twtr.png" /></a></li>
+				<li><a href="#"><img src="images/insta.png" /></a></li>
+				<li><a href="#"><img src="images/you-tube.png" /></a></li>
+				<li><a href="#"><img src="images/in.png" /></a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+<!-- <script>
+$(document).ready(function(){
+    // to fade in on page load
+    $("body").css("display", "none");
+    $("body").fadeIn(400); 
+    // to fade out before redirect
+    $('a').click(function(e){
+        redirect = $(this).attr('href');
+        e.preventDefault();
+        $('body').fadeOut(400, function(){
+            document.location.href = redirect
+        });
+    });
+})
+</script> -->
+</body>
+</html>

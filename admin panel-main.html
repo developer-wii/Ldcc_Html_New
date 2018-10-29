@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin</title>
+	<link rel="shortcut icon" href="images/fav-icon.png" type="image/png" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	
+	jQuery(window).load(function() {
+		// Animate loader off screen
+		jQuery(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+</head>
+<script>
+	$(function() {  
+
+	jQuery.scrollSpeed(100, 800);
+
+	});
+</script>
+
+<body>
+<div class="se-pre-con"></div>
+	<div class="wrapper">
+		<header class="header">
+				<nav class="navbar navbar-default clearfix">
+					<div class="navbar-header">
+						<div class="logo clearfix"><a class="navbar-brand" href="http://112.196.54.36/LDCC/"><img src="images/logo.png"/></a></div>
+					</div>
+					<div class="header-right admin-hdr">
+						<div class="new-admin">
+							<span><a href="#">Add new admin</a></span>
+						</div>
+						 <div class="dropdown user_profile">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Chris Kostas
+							<span class="glyphicon glyphicon-menu-down"></span></button>
+							<ul class="dropdown-menu">
+							  <li><a href="#">HTML</a></li>
+							  <li><a href="#">CSS</a></li>
+							  <li><a href="#">JavaScript</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		</header>
+		<section class="admin-main-section">
+			<div class="container">
+				 <div class="admin_content">
+					<div class="admin_sec">
+						<div class="actionT">
+							<ul class="items clearfix">
+								<li><a href="#"><img src="images/edit.png" /></a></li>
+								<li><a href="#"><img src="images/edit-pass.png" /></a></li>
+								<li><a href="#"><img src="images/delete01.png" /></a></li>
+							</ul>
+						</div>
+						<div class="admin-table">
+							<table class="table" width="100%">
+								<tr>
+									<th>Admin name</th>
+									<th>User name</th>
+									<th>Email</th>
+									<th>Password</th>
+									<th>Admin type</th>
+								</tr>
+								<tr>
+									<td>Richard</td>
+									<td>Richard@gmail.com </td>
+									<td> Richard@gmail.com</td>
+									<td>xxxxxxxxxx </td>
+									<td>Editor</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="add_new_admin">
+						<h3>Add new admin</h3>
+						<div class="new_admin_form">
+							<span class="field"><input type="text" placeholder="Name"/></span>
+							<span class="field"><input type="text" placeholder="User name (email)"/></span>
+							<span class="field"><input type="text" placeholder="Email "/></span>
+							<span class="field"><input type="password" placeholder="Password"/></span>
+							<span class="field"><select><option>Type ( fullacceess or Editor)</option><option>Type ( fullacceess or Editor)</option><option>Type ( fullacceess or Editor)</option></select></span>
+						</div>
+						<div class="action_button">
+							<span class="cencel_user"><input type="button" value="Cancel"/></span>
+							<span class="create_user"><input type="button" value="Create user"/></span>
+						</div>
+					</div>
+					<div class="adit_admin clearfix">
+						<div class="change-pass col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h3>Change password</h3>
+							<input type="text" placeholder="New password"/>
+							<span class="change_btn"><input type="button" value="Change password" /></span>
+						</div>
+						<div class="admin_edit_table col-lg-8 col-md-8 col-sm-8 col-xs-12">
+							<h3>Edit</h3>
+							<table width="100%">
+								<tr>
+									<th>Admin name</th>
+									<th>User name</th>
+									<th>Email</th>
+									<th>Password</th>
+									<th>Admin type</th>
+								</tr>
+								<tr>
+									<td>Richard</td>
+									<td>Richard@gmail.com </td>
+									<td> Richard@gmail.com</td>
+									<td>xxxxxxxxxx </td>
+									<td>Editor</td>
+								</tr>
+							</table>
+							<div class="actionedit">
+								<span class="Discard"><input type="button" value="Discard"/></span>
+								<span class="save_changes"><input type="button" value="save changes"/></span>
+							</div>
+						</div>
+					</div>
+				 </div>
+			</div>
+			
+		</section>
+
+		<footer class="footer_btm">
+			<div class="container">
+				<p>© 2018 LDCC, Inc. All Rights Reserved.</p>
+			</div>
+		</footer>
+		
+		<div class="social">
+			<ul class="list">
+				<li><a href="#"><img src="images/facebook.png" /></a></li>
+				<li><a href="#"><img src="images/twtr.png" /></a></li>
+				<li><a href="#"><img src="images/insta.png" /></a></li>
+				<li><a href="#"><img src="images/you-tube.png" /></a></li>
+				<li><a href="#"><img src="images/in.png" /></a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+<!-- <script>
+$(document).ready(function(){
+    // to fade in on page load
+    $("body").css("display", "none");
+    $("body").fadeIn(400); 
+    // to fade out before redirect
+    $('a').click(function(e){
+        redirect = $(this).attr('href');
+        e.preventDefault();
+        $('body').fadeOut(400, function(){
+            document.location.href = redirect
+        });
+    });
+})
+</script> -->
+</body>
+</html>

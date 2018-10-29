@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contractors History</title>
+	<link rel="shortcut icon" href="images/fav-icon.png" type="image/png" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	
+	jQuery(window).load(function() {
+		// Animate loader off screen
+		jQuery(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+</head>
+<script>
+	$(function() {  
+
+	jQuery.scrollSpeed(100, 800);
+
+	});
+</script>
+
+<body>
+<div class="se-pre-con"></div>
+	<div class="wrapper">
+		<header class="header">
+				<nav class="navbar navbar-default clearfix">
+					<div class="navbar-header">
+						<div class="logo clearfix"><a class="navbar-brand" href="http://112.196.54.36/LDCC/"><img src="images/logo.png"/></a></div>
+					</div>
+					<div class="header-right contractr_history">
+						<div class="phoneH">
+							<a>(+44) 00208 577 271</a>
+						</div>
+						<div class="date_email">
+							<a class="time">Monday to friday 9am­ 6pm</a>
+							<a class="email">Info@Lodondrycleaningcompany.com</a>
+						</div>
+					</div>
+				</nav>
+		</header>
+		<section class="contrctr_history">
+			<div class="container">
+				 <div class="admin_content">
+					<div class="admin_sec">
+						<div class="actionT clearfix">
+							<ul class="items">
+								<li><a href="#"><img src="images/edit-pass.png" /></a></li>
+								<li><a href="#"><img src="images/log-out.png" /></a></li>
+							</ul>
+						</div>
+						<div class="admin-table">
+							<table class="table" width="100%">
+								<tr>
+									<th>Order NO </th>
+									<th class="order-note">Order Note</th>
+									<th>Order date</th>
+									<th>Amount</th>
+									<th>Status</th>
+									<th>Action</th>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td class="order-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+									<td>17/08/18</td>
+									<td>£36</td>
+									<td><span class="pending status">Pending</span><span class="complete status completed">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="change_pass_cntrctr">
+						<div class="change_pass">
+							<h3>Change password</h3>
+							<span class="field"><input type="password" placeholder="New password"/></span>
+							<span class="field"><input type="password" placeholder="Confirm new password"/></span>
+							<span class="change_btn"><input type="button" value="Submit" /></span>
+						</div>
+					</div>
+					<div class="Order_view">
+						
+						<div class="order_list clearfix">
+							<h3>Order view</h3>
+							<table class="table" width="100%">
+								<tr>
+									<th>Order NO</th>
+									<th>Order date</th>
+									<th>Order price</th>
+									<th>Time</th>
+									<th>Status</th>
+									<th class="order-note">Client note</th>
+									<th>Attachment</th>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td>17/08/18</td>
+									<td>£36</td>
+									<td>6:37 pm</td>
+									<td><span class="pending status">Pending</span><span class="complete status completed">Complete</span></td>
+									<td class="order-note">Lorem ipsum dolor sit consectetur adipiscing</td>
+									<td></td>
+								</tr>
+							</table>
+							<div class="actionedit">
+								<span class="close_order"><input type="button" value="Close"/></span>
+								<span class="Delete_order"><input type="button" value="Delete"/></span>
+							</div>
+						</div>
+					</div>
+				 </div>
+			</div>
+			
+		</section>
+
+		<footer class="footer_btm">
+			<div class="container">
+				<p>© 2018 LDCC, Inc. All Rights Reserved.</p>
+			</div>
+		</footer>
+		
+		<div class="social">
+			<ul class="list">
+				<li><a href="#"><img src="images/facebook.png" /></a></li>
+				<li><a href="#"><img src="images/twtr.png" /></a></li>
+				<li><a href="#"><img src="images/insta.png" /></a></li>
+				<li><a href="#"><img src="images/you-tube.png" /></a></li>
+				<li><a href="#"><img src="images/in.png" /></a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+<!-- <script>
+$(document).ready(function(){
+    // to fade in on page load
+    $("body").css("display", "none");
+    $("body").fadeIn(400); 
+    // to fade out before redirect
+    $('a').click(function(e){
+        redirect = $(this).attr('href');
+        e.preventDefault();
+        $('body').fadeOut(400, function(){
+            document.location.href = redirect
+        });
+    });
+})
+</script> -->
+</body>
+</html>

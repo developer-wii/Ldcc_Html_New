@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Driver Current Delivery Panel</title>
+	<link rel="shortcut icon" href="images/fav-icon.png" type="image/png" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+	<script>
+		//paste this code under head tag or in a seperate js file.
+		// Wait for window load
+
+		jQuery(window).load(function() {
+			// Animate loader off screen
+			jQuery(".se-pre-con").fadeOut("slow");;
+		});
+
+	</script>
+</head>
+<script>
+	$(function() {
+
+		jQuery.scrollSpeed(100, 800);
+
+	});
+
+</script>
+
+
+<body>
+	<div class="se-pre-con"></div>
+	<div class="wrapper header_wrapper">
+		<header class="header new_header delivery_header">
+			<nav class="navbar navbar-default clearfix delivery-default">
+				<div class="navbar-header nav_header_left col-md-3 col-sm-3 col-xs-12">
+					<div class="logo clearfix"><a class="navbar-brand" href="http://112.196.54.36/LDCC/"><img src="images/logo_new.png"/></a></div>
+
+
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+				</div>
+				<div class="header-right delivery_head_right col-md-9 col-sm-9">
+					<div class="collapse navbar-collapse desk-nav" id="bs-example-navbar-collapse-1">
+						<div class="row">
+							<div class="col-sm-12 col-xs-12 main_nav">
+								<div class="col-md-9 col-sm-9 nav1">
+									<div class="nav_collapse">
+										<ul class="nav navbar-nav delivery_nav">
+											<li><a href="#" class="active">Current Delivery</a></li>
+											<li><a href="#">Delivery History</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3 nav2">
+									<div class="nav_collapse">
+										<ul class="nav navbar-nav delivery_nav_right">
+											<li><a href="#" class="phone">Call Shop</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="header-right delivery_head_right call_shop col-md-2 col-sm-2">
+							<ul class="nav navbar-nav delivery_nav_right">
+								<li><a href="#" class="phone">Call Shop</a></li>
+							</ul>
+					  </div>    -->
+			</nav>
+		</header>
+
+		<div class="content" id="main">
+			<section id="delivery_cnt">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 current_delivery">
+							<div class="table_structure table-responsive">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Order Number</th>
+											<th>Client Name</th>
+											<th>Delivery Address</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>145</td>
+											<td>Chris Kostas</td>
+											<td>68 Gatting close, London HA8 9YU</td>
+											<td>
+												<p class="deliver_active">Delivered</p>
+											</td>
+										</tr>
+										<tr>
+											<td>146</td>
+											<td>Max Dargan</td>
+											<td>6975 Boston House,London N3 2DB</td>
+											<td>
+												<p class="deliver">Awaiting delivery</p>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot></tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer_btm">
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<div class="contaner">
+				<p>© 2018 LDCC, Inc. All Rights Reserved.</p>
+			</div>
+		</footer>
+
+		<div class="social">
+			<ul class="list">
+				<li><a href="#"><img src="images/facebook.png" /></a></li>
+				<li><a href="#"><img src="images/twtr.png" /></a></li>
+				<li><a href="#"><img src="images/insta.png" /></a></li>
+				<li><a href="#"><img src="images/you-tube.png" /></a></li>
+				<li><a href="#"><img src="images/in.png" /></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	<!-- <script>
+		$(document).ready(function(){
+			// to fade in on page load
+			$("body").css("display", "none");
+			$("body").fadeIn(400);
+			// to fade out before redirect
+			$('a').click(function(e){
+				redirect = $(this).attr('href');
+				e.preventDefault();
+				$('body').fadeOut(400, function(){
+					document.location.href = redirect
+				});
+			});
+		})
+	</script> -->
+
+</body>
+
+</html>

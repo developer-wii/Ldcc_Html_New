@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checkout page</title>
+	<link rel="shortcut icon" href="images/fav-icon.png" type="image/png" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	
+	jQuery(window).load(function() {
+		// Animate loader off screen
+		jQuery(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+</head>
+<script>
+	$(function() {  
+
+	jQuery.scrollSpeed(100, 800);
+
+	});
+</script>
+
+
+<body>
+<div class="se-pre-con"></div>
+	<div class="wrapper">
+		<header class="header">
+				<nav class="navbar navbar-default clearfix">
+					<div class="navbar-header">
+						<div class="logo clearfix"><a class="navbar-brand" href="http://112.196.54.36/LDCC/"><img src="images/logo.png"/></a></div>
+					</div>
+					<div class="header-right">
+						 <div class="dropdown user_profile">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Chris Kostas
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+							  <li><a href="#">HTML</a></li>
+							  <li><a href="#">CSS</a></li>
+							  <li><a href="#">JavaScript</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		</header>
+		<section class="student_rgstr_form checkout_guest">
+			<div class="container">
+				<div class="formSR">
+					<div class="form_fields clearfix">
+						<div class="form_box user_form_box box01 col-lg-8 col-md-8 col-sm-8 col-xs-12">
+							<h2>Billing details</h2>
+							<form class="clearfix">
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Name*" /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Last name" /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Door Number (building name)*" /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Email*" /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Address 1" /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Contact Number*" /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Address 2 " /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field pull-right"><textarea placeholder="Delivery Note"></textarea></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Post code (Prefiedl)" /></span>
+							</form>
+						</div>
+						<div class="form_box user_form_box box02 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h2>Payment information</h2>
+							<form class="clearfix">
+								<span class="field _fullwd"><input type="text" placeholder="Name on the card" /></span>
+								<span class="field _fullwd"><input type="text" placeholder="Card number" /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="Expiry date " /></span>
+								<span class="col-lg-6 col-md-6 col-xs-12 col-sm-6 field"><input type="text" placeholder="CVC" /></span>
+							</form>
+							
+						</div>
+						<div class="buttons col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<a href="http://112.196.54.36/LDCC/Thankyou.html"><span class="creat_acnt"><input type="button" value="Place my order"/></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="discount_sec">
+			<div class="container">
+				<h3>JOIN US AND SAVE UP <span>25%</span> OF YOUR MONTHLY LAUNDRY</h3>
+				<div class="content">
+					<ul class="list clearfix">
+						<li><a href="#"><img src="images/ima.jpg" /></a></li>
+						<li><a href="#"><img src="images/ima.jpg" /></a></li>
+						<li><a href="#"><img src="images/ima.jpg" /></a></li>
+						<li><a href="#"><img src="images/ima.jpg" /></a></li>
+					</ul>
+				</div>
+				<span class="see_more"><a href="#">See more</a></span>
+			</div>
+		</section>
+		<footer class="footer_btm">
+			<div class="container">
+				<p>© 2018 LDCC, Inc. All Rights Reserved.</p>
+			</div>
+		</footer>
+		
+		<div class="social">
+			<ul class="list">
+				<li><a href="#"><img src="images/facebook.png" /></a></li>
+				<li><a href="#"><img src="images/twtr.png" /></a></li>
+				<li><a href="#"><img src="images/insta.png" /></a></li>
+				<li><a href="#"><img src="images/you-tube.png" /></a></li>
+				<li><a href="#"><img src="images/in.png" /></a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+<!-- <script>
+$(document).ready(function(){
+    // to fade in on page load
+    $("body").css("display", "none");
+    $("body").fadeIn(400); 
+    // to fade out before redirect
+    $('a').click(function(e){
+        redirect = $(this).attr('href');
+        e.preventDefault();
+        $('body').fadeOut(400, function(){
+            document.location.href = redirect
+        });
+    });
+})
+</script> -->
+</body>
+</html>

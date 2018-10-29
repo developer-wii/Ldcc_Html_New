@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop Control</title>
+	<link rel="shortcut icon" href="images/fav-icon.png" type="image/png" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jQuery.scrollSpeed.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	
+	jQuery(window).load(function() {
+		// Animate loader off screen
+		jQuery(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+</head>
+<script>
+	$(function() {  
+
+	jQuery.scrollSpeed(100, 800);
+
+	});
+</script>
+
+
+<body>
+<div class="se-pre-con"></div>
+	<div class="wrapper">
+		<header class="header">
+				<nav class="navbar navbar-default clearfix">
+					<div class="navbar-header">
+						<div class="logo clearfix"><a class="navbar-brand" href="http://112.196.54.36/LDCC/"><img src="images/logo.png"/></a></div>
+					</div>
+					<div class="header-right order_cnfrmtion_hrd">
+						<div class="new-account">
+							<span><a href="#">Add a new client account</a></span>
+							<span><a href="#">Add a new contracor account</a></span>
+						</div>
+						 <div class="dropdown user_profile">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Chris Kostas
+							<span class="glyphicon glyphicon-menu-down"></span></button>
+							<ul class="dropdown-menu">
+							  <li><a href="#">HTML</a></li>
+							  <li><a href="#">CSS</a></li>
+							  <li><a href="#">JavaScript</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		</header>
+		<section class="shop_control">
+			<div class="container">
+				 <div class="shopC_list">
+					 <ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#web_order">Web orders</a></li>
+						<li><a data-toggle="tab" href="#contrctr_ordr">Contractor orders</a></li>
+					  </ul>
+
+					  <div class="tab-content">
+						<div id="web_order" class="tab-pane fade in active">
+							<table width="100%">
+								<tr>
+									<th>Order No</th>
+									<th>Client name</th>
+									<th>Email</th>
+									<th>Date</th>
+									<th>Time</th>
+									<th>Price</th>
+									<th>Payment</th>
+									<th>Status</th>
+									<th>Action</th>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td>Chris Kostas</td>
+									<td>Chris@gmail.com </td>
+									<td>17/08/18</td>
+									<td>6:37 pm</td>
+									<td>€36</td>
+									<td>Paid</td>
+									<td><span class="pending status">Pending</span><span class="complete status">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td>Chris Kostas</td>
+									<td>Chris@gmail.com </td>
+									<td>17/08/18</td>
+									<td>6:37 pm</td>
+									<td>€36</td>
+									<td>Paid</td>
+									<td><span class="pending status">Pending</span><span class="complete status">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td>Chris Kostas</td>
+									<td>Chris@gmail.com </td>
+									<td>17/08/18</td>
+									<td>6:37 pm</td>
+									<td>€36</td>
+									<td>Paid</td>
+									<td><span class="pending status">Pending</span><span class="complete status">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td>Chris Kostas</td>
+									<td>Chris@gmail.com </td>
+									<td>17/08/18</td>
+									<td>6:37 pm</td>
+									<td>€36</td>
+									<td>Paid</td>
+									<td><span class="pending status">Pending</span><span class="complete status completed">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+								<tr class="viewed">
+									<td>#1</td>
+									<td>Chris Kostas</td>
+									<td>Chris@gmail.com </td>
+									<td>17/08/18</td>
+									<td>6:37 pm</td>
+									<td>€36</td>
+									<td>Paid</td>
+									<td><span class="pending status stlPanding">Pending</span><span class="complete status">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td>Chris Kostas</td>
+									<td>Chris@gmail.com </td>
+									<td>17/08/18</td>
+									<td>6:37 pm</td>
+									<td>€36</td>
+									<td>Paid</td>
+									<td><span class="pending status">Pending</span><span class="complete status">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+								<tr>
+									<td>#1</td>
+									<td>Chris Kostas</td>
+									<td>Chris@gmail.com </td>
+									<td>17/08/18</td>
+									<td>6:37 pm</td>
+									<td>€36</td>
+									<td>Paid</td>
+									<td><span class="pending status">Pending</span><span class="complete status">Complete</span></td>
+									<td><span><img src="images/eye.png" /></span><span><img src="images/delete.png" /></span></td>
+								</tr>
+							</table>
+						</div>
+						<div id="contrctr_ordr" class="tab-pane fade">
+						  <h3>Menu 1</h3>
+						  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					  </div>
+				 </div>
+			<div class="view_order">
+				<h3>View order</h3>
+				<div class="content">
+					<div class="details">
+						<ul class="list">
+							<li><span>Order number :</span>#1</li>
+							<li><span>Client name :</span>Chris Kostas</li>
+							<li><span>Email :</span>Chris@gmail.com</li>
+							<li><span>Date : </span>17/08/18</li>
+							<li><span>Time :</span>6:37 pm</li>
+						</ul>
+						<ul class="list">
+							<li><span>Price :</span>€36</li>
+							<li><span>Payment :</span>Chris Kostas</li>
+							<li><span>Detail (order break down) :</span>Paid</li>
+						</ul>
+						<span class="print">
+							<a href="#">Print</a>
+						</span>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+		</section>
+
+		<footer class="footer_btm">
+			<div class="container">
+				<p>© 2018 LDCC, Inc. All Rights Reserved.</p>
+			</div>
+		</footer>
+		
+		<div class="social">
+			<ul class="list">
+				<li><a href="#"><img src="images/facebook.png" /></a></li>
+				<li><a href="#"><img src="images/twtr.png" /></a></li>
+				<li><a href="#"><img src="images/insta.png" /></a></li>
+				<li><a href="#"><img src="images/you-tube.png" /></a></li>
+				<li><a href="#"><img src="images/in.png" /></a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+<!-- <script>
+$(document).ready(function(){
+    // to fade in on page load
+    $("body").css("display", "none");
+    $("body").fadeIn(400); 
+    // to fade out before redirect
+})
+</script> -->
+</body>
+</html>
